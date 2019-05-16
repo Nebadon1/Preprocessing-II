@@ -1,1 +1,30 @@
 // Mixins in here
+
+
+
+
+
+@b: @button-color;
+
+
+.button(@width, @height, @bg-color, @padding, @color, @fontsize) {
+  width: @width;
+  height: @height;
+  background-color: @bg-color;
+  padding: @padding;
+  color: @color;
+  font-size: @fontsize;
+  transition-duration: .2s;
+  
+}
+
+.btn {
+  .button(200px, auto, @b, 20px, @white , 1.8rem);
+    border-radius: 20px;
+    text-align: center;
+  &:hover {
+    transform: scale(1.1);
+    background-color: @gossamer;
+    color: @white;
+  }
+}
