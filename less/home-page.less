@@ -7,6 +7,11 @@ header{
     .the-bus{
       margin-bottom: 20px;
     }
+    @media @mobile{
+      margin: 0 auto;
+      width: 87%;
+  }
+      
   }
 
 
@@ -24,6 +29,10 @@ header{
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile{
+        margin: 0 auto;
+        width: 87%;
+      }
     }
 
     .img-content {
@@ -33,6 +42,15 @@ header{
       img {
         border-radius: 10px;
       }
+      @media @mobile{
+        margin: 0 auto;
+        width: 87%;
+        margin-bottom: 21px;
+      }
+    }
+    @media @mobile{
+      display: flex;
+      flex-direction: column;
     }
   }
 
@@ -69,6 +87,16 @@ header{
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @mobile{
+        width: 69%;
+        margin: 0 auto;
+      }
+    }
+    @media @mobile{
+      display: flex;
+      flex-direction: column;
     }
   }
+
+  
 }// home

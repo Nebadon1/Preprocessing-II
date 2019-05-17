@@ -14,6 +14,13 @@
   background-color: #079292;
   color: #FFFFFF;
 }
+@media ( max-width: 500px) {
+  .btn {
+    width: 102%;
+    margin: 19px auto;
+    padding: 14px;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -192,18 +199,37 @@ img {
   padding-bottom: 20px;
   border-bottom: 2px dashed silver;
 }
+@media ( max-width: 500px) {
+  .nav-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .navegation {
-  margin-left: 890px;
+  margin-left: 780px;
+}
+@media ( max-width: 500px) {
+  .navegation {
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
 }
 nav {
   margin-top: 9px;
-  margin-left: 268px;
+  margin-left: 237px;
   font-size: 1.9rem;
 }
 nav a {
   text-decoration: none;
   margin: 11px 20px;
   color: black;
+}
+@media ( max-width: 500px) {
+  nav {
+    width: 87%;
+    margin: 0 auto;
+    font-size: 2.1rem;
+  }
 }
 .footer {
   width: 100%;
@@ -224,6 +250,12 @@ header {
 header .the-bus {
   margin-bottom: 20px;
 }
+@media ( max-width: 500px) {
+  header {
+    margin: 0 auto;
+    width: 87%;
+  }
+}
 .home .content-section {
   margin: 30px 0;
   padding-top: 39px;
@@ -236,12 +268,31 @@ header .the-bus {
   width: 48%;
   padding-right: 1%;
 }
+@media ( max-width: 500px) {
+  .home .content-section .text-content {
+    margin: 0 auto;
+    width: 87%;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
 }
 .home .content-section .img-content img {
   border-radius: 10px;
+}
+@media ( max-width: 500px) {
+  .home .content-section .img-content {
+    margin: 0 auto;
+    width: 87%;
+    margin-bottom: 21px;
+  }
+}
+@media ( max-width: 500px) {
+  .home .content-section {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .home .inverse-content {
   padding-bottom: 30px;
@@ -271,4 +322,16 @@ header .the-bus {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media ( max-width: 500px) {
+  .home .content-pick .destination {
+    width: 69%;
+    margin: 0 auto;
+  }
+}
+@media ( max-width: 500px) {
+  .home .content-pick {
+    display: flex;
+    flex-direction: column;
+  }
 }

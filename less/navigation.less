@@ -6,14 +6,24 @@
     margin-top: 20px;
     padding-bottom: 20px;
     border-bottom: 2px dashed silver;
+
+    @media @mobile{
+      display: flex;
+      flex-direction: column;
+      }
+    
 }
 .navegation{
-    margin-left: 890px;
+    margin-left:780px;
+    @media @mobile{
+      margin: 0 auto;
+      margin-bottom: 15px;
+    }
 }
 
 nav{
     margin-top: 9px;
-    margin-left: 268px;
+    margin-left: 237px;
     font-size: 1.9rem;
      
     a{
@@ -22,6 +32,13 @@ nav{
     color: black;
     
     }
+    @media @mobile{
+        width: 87%;
+        margin: 0 auto;
+        font-size: 2.1rem;
+    }
+    
+
 }
  
   
